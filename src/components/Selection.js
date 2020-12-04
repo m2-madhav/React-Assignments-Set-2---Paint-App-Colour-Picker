@@ -1,14 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import "../styles/Child.css";
 
-export default function Selection(props) {
-  const { applyColor } = props;
-  const [colourChange, setcolourChange] = React.useState({ background: "" });
+export default function Selection({ applyColor }) {
+  let [color, setColor] = useState({ background: "" });
   return (
-    <div
-      className="fix-box"
-      style={colourChange}
-      onClick={() => applyColor(setcolourChange)}
-    >
+    <div className="fix-box" style={color} onClick={() => applyColor(setColor)}>
       <h2 className="subheading">Selection</h2>
     </div>
   );
