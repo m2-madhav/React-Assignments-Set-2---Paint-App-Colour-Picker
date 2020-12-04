@@ -9,7 +9,7 @@ export default function Selection(props) {
       style={colourChange}
       onClick={() => applyColor(setcolourChange)}
     >
-      <h2 class="subheading">Selection</h2>
+      <h2 className="subheading">Selection</h2>
     </div>
   );
 }
